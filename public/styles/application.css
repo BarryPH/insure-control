@@ -3838,8 +3838,7 @@ a {
   text-decoration: none; }
   .o-link:hover, .o-link:active, .o-link:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLink a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(38, 38, 38, 0)), color-stop(50%, rgba(38, 38, 38, 0.4)));
@@ -3854,8 +3853,7 @@ a {
   text-decoration: none; }
   .o-childLink a:hover, .o-childLink a:active, .o-childLink a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-linkGrey {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(153, 153, 153, 0)), color-stop(50%, #999999));
@@ -3870,8 +3868,7 @@ a {
   text-decoration: none; }
   .o-linkGrey:hover, .o-linkGrey:active, .o-linkGrey:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLinkGrey a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(153, 153, 153, 0)), color-stop(50%, #999999));
@@ -3886,8 +3883,7 @@ a {
   text-decoration: none; }
   .o-childLinkGrey a:hover, .o-childLinkGrey a:active, .o-childLinkGrey a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-linkLite {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(230, 230, 230, 0)), color-stop(50%, #e6e6e6));
@@ -3902,8 +3898,7 @@ a {
   text-decoration: none; }
   .o-linkLite:hover, .o-linkLite:active, .o-linkLite:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLinkLite a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(230, 230, 230, 0)), color-stop(50%, #e6e6e6));
@@ -3918,8 +3913,7 @@ a {
   text-decoration: none; }
   .o-childLinkLite a:hover, .o-childLinkLite a:active, .o-childLinkLite a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-linkBrand {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 45, 208, 0)), color-stop(50%, #002DD0));
@@ -3934,8 +3928,7 @@ a {
   text-decoration: none; }
   .o-linkBrand:hover, .o-linkBrand:active, .o-linkBrand:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLinkBrand a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 45, 208, 0)), color-stop(50%, #002DD0));
@@ -3950,8 +3943,7 @@ a {
   text-decoration: none; }
   .o-childLinkBrand a:hover, .o-childLinkBrand a:active, .o-childLinkBrand a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-linkWhite {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #FFF));
@@ -3966,8 +3958,7 @@ a {
   text-decoration: none; }
   .o-linkWhite:hover, .o-linkWhite:active, .o-linkWhite:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLinkWhite a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #FFF));
@@ -3982,22 +3973,26 @@ a {
   text-decoration: none; }
   .o-childLinkWhite a:hover, .o-childLinkWhite a:active, .o-childLinkWhite a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-linkInvisible {
   background-image: none; }
   .o-linkInvisible:hover, .o-linkInvisible:active, .o-linkInvisible:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
 
 .o-childLinkInvisible a {
   background-image: none; }
   .o-childLinkInvisible a:hover, .o-childLinkInvisible a:active, .o-childLinkInvisible a:focus {
     background-image: none;
-    color: inherit;
-    text-decoration: none; }
+    color: inherit; }
+
+.o-linkUnderline {
+  background-image: none;
+  text-decoration: underline; }
+  .o-linkUnderline:hover, .o-linkUnderline:active, .o-linkUnderline:focus {
+    background-image: none;
+    color: inherit; }
 
 .c-text--xs {
   color: #333;

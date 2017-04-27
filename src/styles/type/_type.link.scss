@@ -67,6 +67,7 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
 
 @mixin underlineLink(
     $mixin-rule: $linkRuleBlack,
+    $mixin-underline: false,
     $mixin-hover-rule: none,
     $mixin-color: currentColor,
     $mixin-hover-color: inherit,
@@ -90,10 +91,13 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
         text-decoration: none;
     }
 
+    @if $mixin-underline {
+        text-decoration: underline;
+    }
+
     @include on-event() {
         background-image: $mixin-hover-rule;
         color: $mixin-hover-color;
-        text-decoration: none;
     }
 }
 
@@ -114,3 +118,5 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
 
 .o-linkInvisible { @include underlineLink(none); }
 .o-childLinkInvisible { a { @include underlineLink(none); } }
+
+.o-linkUnderline { @include underlineLink($mixin-underline: true, $mixin-rule: none) }
