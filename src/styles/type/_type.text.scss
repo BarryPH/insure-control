@@ -128,6 +128,13 @@
     );
 }
 
+@mixin textRgLight() {
+    @include textTemplate(
+        $mixinColor: palette(text-light)
+    );
+}
+
+
 @mixin textLg() {
     @include textTemplate(
         $mixinSize: text--lg
@@ -184,6 +191,7 @@
 .c-text--smBold   { @include textSmBold(); }
 .c-text--smMedium { @include textSmMedium(); }
 .c-text           { @include textRg(); }
+.c-text--light    { @include textRgLight(); }
 .c-text--medium   { @include textRg(); color: palette(black-50); }
 .c-text--intro    { @include textRg(); color: palette(black-50); margin-bottom: space(0.5); }
 .c-text--lg       { @include textLg(); }

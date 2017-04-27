@@ -20,10 +20,11 @@ $base-black                    : #000;
 $base-white                    : #FFF;
 
 $season2016                    : #65bd24;
+$brand                         : #002DD0;
 
 $palette: (
     black                      : $base-black,
-    text                       : #5C5C5C,
+    text                       : #333,
     text-dark                  : #151515,
     text-light                 : tint($base-black, 50%),
     text-faint                 : tint($base-black, 70%),
@@ -45,7 +46,7 @@ $palette: (
     neutral-text               : darken(#f0eeeb, 27%),
     neutral-dark               : darken(#f0eeeb, 9%),
     neutral-light              : lighten(#f0eeeb, 4%),
-    brand                      : #76699a, // #422b80, // #89638B, // #383d78,
+    brand                      : $brand,
     brand-complement           : #2e2423,
     brand-counter              : #887E73,
     brand-purplemud            : #3e3746,
@@ -54,7 +55,7 @@ $palette: (
     brand-kermit               : #399600,
     brand-kermit-active        : #4ECF00,
     modal-background           : #151515,
-    highlight-action           : #E01D64,
+    highlight-action           : $brand,
     highlight-action-dark      : #A30C43,
     highlight-edit             : #4ECF00,
     highlight-edit-dark        : #439213,
@@ -85,7 +86,7 @@ $space                         : $space-unit * 1;
 
 $gutterSpace                   : space(0.75);
 $paragraphSpace                : space(0.75);
-$blockSpace                    : 7vh; //5.5vh;
+$blockSpace                    : 9vh; //5.5vh;
 
 $cardRadius                    : 6px;
 $buttonRadius                  : 4px;
@@ -119,6 +120,7 @@ $grid-breakpoints: (
 ) !default;
 
 $container-max-widths: (
+    xs: 400px,
     sm: 576px,
     sm-plus: 720px,
     rg: 840px,

@@ -11,6 +11,8 @@
     justify-content: space-between;
     position: relative;
 
+    padding: 37px space(1.5);
+
     //@include media-breakpoint-up(sm) { max-width: container-width(xl); }
     //@include media-breakpoint-up(lg) { max-width: none; }
     //@include media-breakpoint-up(lg) { padding: 0 4%; }
@@ -32,12 +34,17 @@
     }
 }
 
+.c-nav-logo {
+    @include textRgBold();
+    color: palette(brand);
+}
+
 .c-nav-menu {
     @include listInline();
 }
 
 .c-nav-menu li {
-    @include textRgMedium();
+    @include textRgBold();
     line-height: 36px;
 }
 

@@ -13,6 +13,7 @@
     $mixinFont: $font-text-bold,
     $mixinLetterSpacing: 0,
     $mixinLineHeight: 1.25,
+    $mixinMarginTop: 0,
     $mixinMarginBottom: 0
 ) {
 
@@ -21,8 +22,8 @@
     font-family: $mixinFont;
     letter-spacing: $mixinLetterSpacing;
     line-height: $mixinLineHeight;
+    margin-top: $mixinMarginTop;
     margin-bottom: $mixinMarginBottom;
-    text-align: left;
 
     // sizes
     font-size: fontsize($mixinSize, xs);
@@ -63,7 +64,8 @@
 
 @mixin headline() {
     @include headlineTemplate(
-        $mixinSize: headline
+        $mixinSize: headline,
+        $mixinColor: palette(brand)
     );
 }
 
@@ -78,11 +80,12 @@
 }
 
 @mixin headlineRule() {
-    border-top: 1px solid palette("border");
-    padding-top: space(0.25);
-    margin-bottom: space(1);
+    border-top: 1px solid palette(brand);
+    padding-top: space(0.5);
+    margin-bottom: space(0.5);
+    display: inline-block;
 }
-    
+
 @mixin headlineMetaRuled() {
     @include headlineMeta();
     @include headlineRule();
@@ -99,7 +102,19 @@
 @mixin headlineSm() {
     @include headlineTemplate(
         $mixinFont: $font-text-bold,
-        $mixinSize: headline--sm
+        $mixinSize: headline--sm,
+        $mixinMarginBottom: space(0.75),
+        $mixinMarginTop: space(0.75)
+    );
+}
+
+@mixin headlineSmBrand() {
+    @include headlineTemplate(
+        $mixinFont: $font-text-bold,
+        $mixinSize: headline--sm,
+        $mixinColor: palette(brand),
+        $mixinMarginBottom: space(0.75),
+        $mixinMarginTop: space(0.75)
     );
 }
 
@@ -170,13 +185,15 @@
 .c-headline--mdLight { @include headlineMdLight(); }
 .c-headline--mdBold  { @include headlineMdBold(); }
 .c-headline--sm      { @include headlineSm(); }
+.c-headline--smBrand { @include headlineSmBrand(); }
 .c-headline--meta    { @include headlineMeta(); }
 
 
 
 .c-headline--inText {
-    @include textRgBold();
+    @include textSmBold();
     @include headlineRule();
+    color: palette(brand);
 }
 
 .c-headline--inTextMeta {

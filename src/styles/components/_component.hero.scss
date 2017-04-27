@@ -25,6 +25,18 @@
     &--black {
         background-color: black;
     }
+
+    &--light:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
     
     &--purplemudDark {
         background-color: $color-brand-purplemud-dark;
@@ -88,7 +100,7 @@
 
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
-    padding-bottom: calc(70vh);
+    padding-bottom: calc(60vh);
     //@include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
 }
 
@@ -127,7 +139,6 @@
     padding-left: $gutterSpace * 2;
     padding-right: $gutterSpace * 2;
     position: relative; // 1. 
-    text-align: center;
     
     //@include container( $width: container-width(sm) );
     
@@ -195,7 +206,7 @@
 .c-hero-display {
     @include display();
     margin-bottom: space(0.25);
-    //text-transform: capitalize;
+    color: palette(brand);
     
     span {
         font-family: $font-text-light;
@@ -218,7 +229,7 @@
 }
 
 .c-hero-text {
-    @include textRg();
+    @include textLgBold();
     
     span {
         color: rgba( palette(white), 0.7 );
@@ -240,14 +251,11 @@
 }
 
 .c-hero-masthead,
-.c-hero-display,
 .c-hero-headline,
 .c-hero-headline--withQuote,
 .c-hero-text,
 .c-hero-textMeta {
-    color: palette(white);
-    text-align: center;
-    text-shadow: 0 0 space(1) rgba( palette(black), 0.4);
+    color: palette(text);
 }
 
 .c-hero--reversedIn,
@@ -281,6 +289,11 @@
     .c-hero-textMeta {
         color: palette(text-faint);
     }
+}
+
+.c-hero-image {
+    left: 50%;
+    bottom: 0;
 }
 
 
