@@ -42,7 +42,7 @@ $palette: (
     white                      : $base-white,
     background                 : #fdfdfd,
     background-neutral         : #F1F4F4, // #F7F4F4,
-    neutral                    : #F3F2F1,
+    neutral                    : #F2F2F2,
     neutral-text               : darken(#f0eeeb, 27%),
     neutral-dark               : darken(#f0eeeb, 9%),
     neutral-light              : lighten(#f0eeeb, 4%),
@@ -84,7 +84,7 @@ $base-line-height              : ($base-font-size-unit * $base-line-height-unit)
 $space-unit                    : $base-line-height;
 $space                         : $space-unit * 1;
 
-$gutterSpace                   : space(0.75);
+$gutterSpace                   : space(1);
 $paragraphSpace                : space(0.75);
 $blockSpace                    : 9vh; //5.5vh;
 
@@ -120,8 +120,8 @@ $grid-breakpoints: (
 ) !default;
 
 $container-max-widths: (
-    xs: 400px,
-    sm: 576px,
+    xs: 420px,
+    sm: 630px,
     sm-plus: 720px,
     rg: 840px,
     md: 960px,

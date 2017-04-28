@@ -20,6 +20,10 @@ $innerBlockSpace: space(3);
         margin-top: $blockSpace * 2;
     }
 
+    &--oneAndAHalf {
+        margin-top: $blockSpace * 1.5;
+    }
+
     &--half {
         margin-top: $blockSpace * 0.5;
     }
@@ -30,8 +34,7 @@ $innerBlockSpace: space(3);
     
     // colors
     &--neutral {
-        background-color: palette("black-5");
-        background: linear-gradient( palette("black-5"), palette(white) 50% ); // https://css-tricks.com/css3-gradients/
+        background-color: palette("neutral");
         padding: $blockSpace 0;
     }
 

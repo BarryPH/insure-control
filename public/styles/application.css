@@ -3596,52 +3596,52 @@ ul {
     margin: 0 auto; } }
 
 .Grid--withGutter {
-  margin: 0 -9px; }
+  margin: 0 -12px; }
   @media (min-width: 992px) {
     .Grid--withGutter {
-      margin: 0 -18px; } }
+      margin: 0 -24px; } }
 
 .Grid--withGutter > .Grid-cell {
-  padding: 0 9px; }
+  padding: 0 12px; }
   @media (min-width: 992px) {
     .Grid--withGutter > .Grid-cell {
-      padding: 0 18px; } }
+      padding: 0 24px; } }
 
 .Grid--withFullGutter {
-  margin: -9px; }
+  margin: -12px; }
   @media (min-width: 992px) {
     .Grid--withFullGutter {
-      margin: -18px; } }
+      margin: -24px; } }
 
 .Grid--withFullGutter > .Grid-cell {
-  padding: 9px; }
+  padding: 12px; }
   @media (min-width: 992px) {
     .Grid--withFullGutter > .Grid-cell {
-      padding: 18px; } }
+      padding: 24px; } }
 
 .Grid--withGutterSm {
-  margin: 0 -4.5px; }
+  margin: 0 -6px; }
   @media (min-width: 992px) {
     .Grid--withGutterSm {
-      margin: 0 -9px; } }
+      margin: 0 -12px; } }
 
 .Grid--withGutterSm > .Grid-cell {
-  padding: 0 4.5px; }
+  padding: 0 6px; }
   @media (min-width: 992px) {
     .Grid--withGutterSm > .Grid-cell {
-      padding: 0 9px; } }
+      padding: 0 12px; } }
 
 .Grid--withGutterLg {
-  margin: 0 -18px; }
+  margin: 0 -24px; }
   @media (min-width: 992px) {
     .Grid--withGutterLg {
-      margin: 0 -54px; } }
+      margin: 0 -72px; } }
 
 .Grid--withGutterLg > .Grid-cell {
-  padding: 0 18px; }
+  padding: 0 24px; }
   @media (min-width: 992px) {
     .Grid--withGutterLg > .Grid-cell {
-      padding: 0 54px; } }
+      padding: 0 72px; } }
 
 /**
   * Simple page-level setup from InuitCSS.
@@ -4830,16 +4830,16 @@ blockquote,
 
 .o-container {
   height: inherit;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
   position: relative; }
   @media (min-width: 992px) {
     .o-container {
-      padding-left: 36px;
-      padding-right: 36px; } }
+      padding-left: 48px;
+      padding-right: 48px; } }
   .o-container:before, .o-container:after {
     content: " ";
     display: table; }
@@ -4854,16 +4854,16 @@ blockquote,
     margin-bottom: 0; }
   .o-container--xs {
     height: inherit;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
+    max-width: 420px;
     position: relative; }
     @media (min-width: 992px) {
       .o-container--xs {
-        padding-left: 36px;
-        padding-right: 36px; } }
+        padding-left: 48px;
+        padding-right: 48px; } }
     .o-container--xs:before, .o-container--xs:after {
       content: " ";
       display: table; }
@@ -4878,16 +4878,16 @@ blockquote,
       margin-bottom: 0; }
   .o-container--sm {
     height: inherit;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 576px;
+    max-width: 630px;
     position: relative; }
     @media (min-width: 992px) {
       .o-container--sm {
-        padding-left: 36px;
-        padding-right: 36px; } }
+        padding-left: 48px;
+        padding-right: 48px; } }
     .o-container--sm:before, .o-container--sm:after {
       content: " ";
       display: table; }
@@ -4902,16 +4902,16 @@ blockquote,
       margin-bottom: 0; }
   .o-container--rg {
     height: inherit;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
     max-width: 840px;
     position: relative; }
     @media (min-width: 992px) {
       .o-container--rg {
-        padding-left: 36px;
-        padding-right: 36px; } }
+        padding-left: 48px;
+        padding-right: 48px; } }
     .o-container--rg:before, .o-container--rg:after {
       content: " ";
       display: table; }
@@ -4926,16 +4926,16 @@ blockquote,
       margin-bottom: 0; }
   .o-container--md {
     height: inherit;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     position: relative; }
     @media (min-width: 992px) {
       .o-container--md {
-        padding-left: 36px;
-        padding-right: 36px; } }
+        padding-left: 48px;
+        padding-right: 48px; } }
     .o-container--md:before, .o-container--md:after {
       content: " ";
       display: table; }
@@ -4950,16 +4950,16 @@ blockquote,
       margin-bottom: 0; }
   .o-container--xl {
     height: inherit;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
     position: relative; }
     @media (min-width: 992px) {
       .o-container--xl {
-        padding-left: 36px;
-        padding-right: 36px; } }
+        padding-left: 48px;
+        padding-right: 48px; } }
     .o-container--xl:before, .o-container--xl:after {
       content: " ";
       display: table; }
@@ -4977,7 +4977,7 @@ blockquote,
   padding: 21px 36px 20px; }
 
 .c-container-rule {
-  max-width: 1206px;
+  max-width: 1218px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
@@ -4988,7 +4988,7 @@ blockquote,
   margin-bottom: 18px; }
   @media (min-width: 992px) {
     .c-container-rule {
-      max-width: 1242px; } }
+      max-width: 1266px; } }
   .c-container-rule:before, .c-container-rule:after {
     content: " ";
     display: table; }
@@ -5003,7 +5003,7 @@ blockquote,
     margin-bottom: 0; }
 
 .o-column--post {
-  max-width: 400px; }
+  max-width: 420px; }
 
 .o-grid {
   display: -webkit-box;
@@ -5039,7 +5039,7 @@ blockquote,
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -4.5px; }
+  margin: 0 -6px; }
   .o-grid--withGutter > * {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 5em;
@@ -5047,12 +5047,12 @@ blockquote,
     flex: 1 0 5em; }
   @media (min-width: 992px) {
     .o-grid--withGutter {
-      margin: 0 -9px; } }
+      margin: 0 -12px; } }
   .o-grid--withGutter > * {
-    padding: 0 4.5px; }
+    padding: 0 6px; }
     @media (min-width: 992px) {
       .o-grid--withGutter > * {
-        padding: 0 9px; } }
+        padding: 0 12px; } }
 
 [role="button"] {
   cursor: pointer; }
@@ -6092,16 +6092,14 @@ blockquote,
   position: relative; }
   .c-block--double {
     margin-top: 18vh; }
+  .c-block--oneAndAHalf {
+    margin-top: 13.5vh; }
   .c-block--half {
     margin-top: 4.5vh; }
   .c-block--quarter {
     margin-top: 2.25vh; }
   .c-block--neutral {
-    background-color: whitesmoke;
-    background: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), color-stop(50%, #FFF));
-    background: -webkit-linear-gradient(whitesmoke, #FFF 50%);
-    background: -o-linear-gradient(whitesmoke, #FFF 50%);
-    background: linear-gradient(whitesmoke, #FFF 50%);
+    background-color: #F2F2F2;
     padding: 9vh 0; }
   .c-block--neutralShowcase {
     background-color: whitesmoke;
@@ -6987,8 +6985,8 @@ blockquote,
   flex-basis: 100%;
   margin: 0 auto;
   max-width: 720px;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 48px;
+  padding-right: 48px;
   position: relative; }
   @media (min-width: 992px) {
     .c-hero-hgroup--indexPg {
@@ -7387,8 +7385,8 @@ blockquote,
 
 .c-settingsBlock {
   height: inherit;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
@@ -7396,8 +7394,8 @@ blockquote,
   margin-top: 48px; }
   @media (min-width: 992px) {
     .c-settingsBlock {
-      padding-left: 36px;
-      padding-right: 36px; } }
+      padding-left: 48px;
+      padding-right: 48px; } }
   .c-settingsBlock:before, .c-settingsBlock:after {
     content: " ";
     display: table; }
@@ -8331,16 +8329,16 @@ blockquote,
 
 .c-post-content {
   height: inherit;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 576px;
+  max-width: 630px;
   position: relative; }
   @media (min-width: 992px) {
     .c-post-content {
-      padding-left: 36px;
-      padding-right: 36px; } }
+      padding-left: 48px;
+      padding-right: 48px; } }
   .c-post-content:before, .c-post-content:after {
     content: " ";
     display: table; }
