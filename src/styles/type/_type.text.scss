@@ -190,6 +190,7 @@
 .c-text--sm       { @include textSm(); }
 .c-text--smBold   { @include textSmBold(); }
 .c-text--smMedium { @include textSmMedium(); }
+.c-text--smLight  { @include textSmLight(); }
 .c-text           { @include textRg(); }
 .c-text--light    { @include textRgLight(); }
 .c-text--medium   { @include textRg(); color: palette(black-50); }

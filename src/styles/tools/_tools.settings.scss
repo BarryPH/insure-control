@@ -138,7 +138,7 @@ $fontsizes: (
     text--xs: (
         xs            : 10px,
         sm            : 11px,
-        rg            : 13px
+        rg            : 12px
     ),
     text--sm: (
         xs            : 12px,
@@ -172,8 +172,8 @@ $fontsizes: (
     ),
     headline--md: (
         xs            : 20px,
-        sm            : 22px,
-        lg            : 25px
+        sm            : 24px,
+        lg            : 29px
     ),
     headline: (
         xs            : 22px,
@@ -261,25 +261,27 @@ $display-font-stack    : $sans-font-stack;
 $fonts-path           : '/fonts/';
 
 // Is your font namespaced?
-$font-namespace        : 'Camphor-';
+$font-sans-namespace        : 'Averta-';
+$font-serif-namespace        : 'Malabar-';
 
 // Is the html-level font stack sans or serif?
 $main-font-stack       : $sans-font-stack;
 
 // Create font-file variables
-$sans-thin            : '#{$font-namespace}Light';
-$sans-light           : '#{$font-namespace}Light';
-$sans-book            : '#{$font-namespace}Regular';
-$sans-regular         : '#{$font-namespace}Regular';
-$sans-medium          : '#{$font-namespace}Medium';
-$sans-bold            : '#{$font-namespace}Bold';
-$sans-heavy           : '#{$font-namespace}Heavy';
-//$sans-xbold           : Extrabold;
-$sans-black           : '#{$font-namespace}Heavy';
-//$display              : #{$display-font-name};
+$sans-thin            : '#{$font-sans-namespace}Light';
+$sans-light           : '#{$font-sans-namespace}Light';
+$sans-book            : '#{$font-sans-namespace}Regular';
+$sans-regular         : '#{$font-sans-namespace}Regular';
+$sans-medium          : '#{$font-sans-namespace}Medium';
+$sans-semibold        : '#{$font-sans-namespace}Semibold';
+$sans-bold            : '#{$font-sans-namespace}Bold';
+$sans-heavy           : '#{$font-sans-namespace}Heavy';
+$sans-black           : '#{$font-sans-namespace}Heavy';
 
-$sans-regular-italic  : Regular-italic;
+$sans-regular-italic  : '#{font-sans-namespace}Regular-italic';
 $sans-medium-italic   : Medium-italic;
+
+$serif-bold           : '#{$font-serif-namespace}Bold';
 
 
 
@@ -288,19 +290,22 @@ $sans-medium-italic   : Medium-italic;
 // Ps. This below prints an unwanted space between the path var and the font var:
 // @include font-face($sans-thin, join($fonts-path,$sans-thin) );
 
-@include font-face($sans-thin, '#{$fonts-path}#{$sans-thin}' );
-@include font-face($sans-light, '#{$fonts-path}#{$sans-light}' );
-@include font-face($sans-book, '#{$fonts-path}#{$sans-book}' );
+//@include font-face($sans-thin, '#{$fonts-path}#{$sans-thin}' );
+//@include font-face($sans-light, '#{$fonts-path}#{$sans-light}' );
+//@include font-face($sans-book, '#{$fonts-path}#{$sans-book}' );
 @include font-face($sans-regular, '#{$fonts-path}#{$sans-regular}' );
-@include font-face($sans-medium, '#{$fonts-path}#{$sans-medium}' );
+@include font-face($sans-regular-italic, '#{$fonts-path}#{$sans-regular-italic}' );
+//@include font-face($sans-medium, '#{$fonts-path}#{$sans-medium}' );
+@include font-face($sans-semibold, '#{$fonts-path}#{$sans-semibold}' );
 @include font-face($sans-bold, '#{$fonts-path}#{$sans-bold}' );
-@include font-face($sans-heavy, '#{$fonts-path}#{$sans-heavy}' );
-@include font-face($sans-black, '#{$fonts-path}#{$sans-black}' );
+//@include font-face($sans-heavy, '#{$fonts-path}#{$sans-heavy}' );
+//@include font-face($sans-black, '#{$fonts-path}#{$sans-black}' );
+
+@include font-face($serif-bold, '#{$fonts-path}#{$serif-bold}' );
 
 // Unused, so apply a default to avoid gulp fuckups
 //@include font-face($sans-xbold,   '#{$fonts-path}#{$sans-xbold}' );
 //@include font-face($display, '#{$fonts-path}#{$display}' );
-//@include font-face($sans-regular-italic, '#{$fonts-path}#{$sans-regular-italic}' );
 
 
 // Apply font-file variables to a font-stack.
@@ -318,7 +323,8 @@ $font-text-xbold      : $font-text-regular;
 $font-text-heavy      : join($sans-heavy, $main-font-stack);
 $font-text-black      : join($sans-black, $main-font-stack);
 $font-text-regular-i  : $font-text-regular;
-$font-display         : $font-text-regular;
+$font-display         : join($serif-bold, $serif-font-stack);
+$font-headline        : join($serif-bold, $serif-font-stack);
 
 // Unused, so apply a default to avoid gulp fuckups
 //$font-sans-xbold      : join($sans-xbold, $main-font-stack);

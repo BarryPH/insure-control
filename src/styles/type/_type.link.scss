@@ -75,6 +75,7 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
     $mixin-inverse: false
 
 ) {
+    color: $mixin-color;
 
     @if $mixin-rule == 'none' {
         background-image: none;
@@ -86,7 +87,6 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
         background-repeat: repeat-x;
         background-size: 1px 2px;
         background-position: 0 100%;
-        color: $mixin-color;
         padding-bottom: 0;
         text-decoration: none;
     }
@@ -110,7 +110,7 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
 .o-linkLite { @include underlineLink($mixin-rule: $linkRuleLite); }
 .o-childLinkLite { a { @include underlineLink($mixin-rule: $linkRuleLite); } }
 
-.o-linkBrand { @include underlineLink($mixin-rule: $linkRuleBrand); }
+.o-linkBrand { color: palette('brand') }
 .o-childLinkBrand { a { @include underlineLink($mixin-rule: $linkRuleBrand); } }
 
 .o-linkWhite { @include underlineLink($mixin-rule: $linkRuleWhite); }
@@ -119,4 +119,4 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
 .o-linkInvisible { @include underlineLink(none); }
 .o-childLinkInvisible { a { @include underlineLink(none); } }
 
-.o-linkUnderline { @include underlineLink($mixin-underline: true, $mixin-rule: none) }
+.o-linkUnderline { @include underlineLink($mixin-underline: true, $mixin-rule: none); }

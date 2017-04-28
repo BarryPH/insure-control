@@ -35,7 +35,7 @@
 }
 
 .c-nav-logo {
-    @include textRgBold();
+    font-family: $font-headline;
     color: palette(brand);
 }
 
