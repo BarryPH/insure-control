@@ -111,6 +111,7 @@
 .u-smDown-spaceR   { @include media-breakpoint-down(xs) { margin-right: space(1); } }
 .u-smDown-spaceTD2 { @include media-breakpoint-down(xs) { margin-top: space(0.5); } }
 .u-smDown-spaceT   { @include media-breakpoint-down(xs) { margin-top: space(1); } }
+.u-smDown-spaceT15 { @include media-breakpoint-down(xs) { margin-top: space(1.5); } }
 .u-smDown-spaceT2  { @include media-breakpoint-down(xs) { margin-top: space(2); } }
 
 .u-smDown-blockR--3by4 { @include media-breakpoint-down(xs) { margin-right: $blockSpace * 0.75; } }

@@ -6927,6 +6927,9 @@ blockquote,
   .c-hero--fullScreen {
     height: -webkit-calc(100vh - 80px);
     height: calc(100vh - 80px); }
+  @media (max-width: 767px) {
+    .c-hero {
+      text-align: center; } }
 
 .c-hero--topRule {
   border-top: 1px solid #705475; }
@@ -7205,6 +7208,9 @@ blockquote,
 .c-hero-image {
   left: 50%;
   bottom: 0; }
+  @media (max-width: 767px) {
+    .c-hero-image {
+      display: none; } }
 
 .c-memberStripe {
   background-color: #705475;
@@ -8615,6 +8621,10 @@ blockquote,
 @media (max-width: 543px) {
   .u-smDown-spaceT {
     margin-top: 24px; } }
+
+@media (max-width: 543px) {
+  .u-smDown-spaceT15 {
+    margin-top: 36px; } }
 
 @media (max-width: 543px) {
   .u-smDown-spaceT2 {

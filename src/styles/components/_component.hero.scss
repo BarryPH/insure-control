@@ -63,6 +63,10 @@
     &--fullScreen {
         height: calc(100vh - 80px);
     }
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
 }
 
 .c-hero--topRule {
@@ -289,6 +293,10 @@
 .c-hero-image {
     left: 50%;
     bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }
 
 
