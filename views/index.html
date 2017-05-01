@@ -8,10 +8,11 @@
 	<title>InsureControl</title>
 </head>
 <body>
-	<nav class='c-nav c-nav--medium c-nav--floating'>
+	<nav class='c-nav c-nav--medium c-nav--floating' role='banner'>
 		<div class='c-nav-logo'>
 			InsureControl
 		</div>
+
 		<ul class='c-nav-menu'>
 			<li><a data-scroll href='#why'>Why Brett?</a></li>
 			<li><a data-scroll href='#what-people-say'>What people say</a></li>
@@ -199,7 +200,7 @@
 
 	<footer class='c-footer'>
 		<div class='o-container'>
-			<nav class='c-nav'>
+			<nav class='c-nav' role='banner'>
 				<div class='c-nav-logo'>
 					InsureControl
 				</div>
@@ -224,6 +225,24 @@
 		</div>
 	</footer>
 
+	<div class='c-nav-trigger u-sm-hide' data-modal-toggle=''>Menu</div>
+	<div class='o-modal' tabindex='-1' role='dialog' aria-labelledby="mobileNav" data-modal="">
+		<div class='o-modal-dialog o-aligner' role="document">
+			<div class='o-aligner-item'>
+				<div class='Nav-logo'>
+					<a href='/'>InsureControl</a>
+				</div>
+
+				<ul class='Nav-menu'>
+					<li><a data-scroll href='#why'>Why Brett?</a></li>
+					<li><a data-scroll href='#what-people-say'>What people say</a></li>
+					<li><a data-scroll href='#contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<script src='/js/formspree.js'></script>
+	<script src='/js/touchnav.js'></script>
 </body>
 </html>

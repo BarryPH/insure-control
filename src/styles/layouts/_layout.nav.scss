@@ -41,6 +41,13 @@
 
 .c-nav-menu {
     @include listInline();
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+        @include when-inside("nav[role="banner"]") {
+            display: block;
+        }
+    }
 }
 
 .c-nav-menu li {
