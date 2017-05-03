@@ -5226,6 +5226,30 @@ blockquote,
   -ms-transform: translateY(2px);
   transform: translateY(2px); }
 
+.c-button--playVideo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%; }
+  .c-button--playVideo, .c-button--playVideo:hover, .c-button--playVideo:active, .c-button--playVideo:focus {
+    background-color: transparent;
+    border-color: currentColor;
+    color: #FFF;
+    font-family: "Averta-Bold", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Droid Sans", "Segoe UI", "Fira Sans", "Ubuntu", sans-serif;
+    line-height: 60px; }
+
 .c-button--joinHeroVideo, .c-button--joinHeroVideo:hover, .c-button--joinHeroVideo:active, .c-button--joinHeroVideo:focus {
   background-color: #FFF;
   border-color: #FFF;
@@ -8550,7 +8574,9 @@ blockquote,
   transition: opacity 800ms, height 0s;
   -webkit-transition-delay: 0s, 0s;
   -o-transition-delay: 0s, 0s;
-  transition-delay: 0s, 0s; }
+  transition-delay: 0s, 0s;
+  color: #fff;
+  font-family: "Averta-Bold", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Droid Sans", "Segoe UI", "Fira Sans", "Ubuntu", sans-serif; }
   .c-video-poster:before {
     -webkit-transition-property: all;
     -o-transition-property: all;
@@ -8561,13 +8587,7 @@ blockquote,
     -webkit-transition-timing-function: ease-out;
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    background-color: rgba(0, 0, 0, 0.25);
-    background-color: rgba(69, 39, 0, 0.4);
-    background-color: rgba(149, 96, 28, 0.5);
-    background-color: rgba(215, 131, 24, 0.5);
-    background-color: rgba(0, 45, 208, 0.2);
-    background-color: rgba(215, 24, 163, 0.2);
-    background-color: rgba(137, 0, 99, 0.3);
+    background-color: rgba(0, 36, 163, 0.75);
     content: " ";
     height: 100%;
     left: 0;

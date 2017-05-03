@@ -151,6 +151,20 @@ $Button: (
     }
 }
 
+.c-button--playVideo {
+    @include on-event(true) {
+        background-color: transparent;
+        border-color: currentColor;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
 .c-button--joinHeroVideo {
     @include on-event(true) {
         background-color: palette(white);
