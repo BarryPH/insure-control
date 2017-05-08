@@ -1,0 +1,165 @@
+nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
+    .c-nav-logo #{site_title}
+    ul.c-nav-menu
+        li: a(data-scroll='', href='#why') Why Brett?
+        li: a(data-scroll='', href='#what-people-say') What people say
+        li: a(data-scroll='', href='#contact') Contact
+        li •
+        li Call 1800 772 100
+
+.c-hero
+    .FlexEmbed
+        .FlexEmbed--ratio.c-hero-ratioIndex
+        .FlexEmbed-content
+            .o-coverImage.c-hero--light(style='background-image: url("assets/images/hero.jpg")')
+                .o-aligner.o-container--rg
+                    .o-aligner-item
+                        .Grid.Grid--withGutter
+                            .Grid-cell.u-sm-size1of2
+                                h1.c-hero-display Policies for people.
+                                p.c-hero-text.u-marginT2
+                                    | I provide a local, face-to-face service to help people insure for themselves and their families.
+                                p.c-hero-text
+                                    | I'm driven to help, because when I lost my wife to cancer, we weren't financially prepared.
+
+                            .Grid-cell.u-size1of2.u-posAbsolute.c-hero-image
+                                img(src='http://placehold.it/300x450')
+
+.o-container.o-container--sm.u-textCenter
+    .c-block
+        div
+            h4.c-headline--inText LIFE, ASSURED
+        h2.c-headline--md There are some things we can't control. It pays to think ahead.
+
+    .c-block
+        .FlexEmbed
+            .FlexEmbed-ratio--16by9
+                .FlexEmbed-content
+                    .js-videoWrapper.c-video-wrapper
+                        iframe.js-videoIframe.o-posAbsoluteCenterAlt(src='', data-src='https://www.youtube.com/embed/o0nj-N6kTLI?autoplay=1', height='100%', width='100%', frameborder='0', allowtransparency='true', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+                        .o-posAbsoluteCenterAlt.o-coverImage.o-coverImage--bottom.c-video-poster(style='background-image: url("http://placehold.it/600x350");')
+                            .o-aligner
+                                .o-aligner-item
+                                    .o-container.o-container--xs
+                                        .c-hero-buttons
+                                            a.js-videoPoster.c-button.c-button--playVideo
+                                                svg.o-icon.u-colorWhite(width='60', height='60', version='1.1', viewbox='0 0 24 24')
+                                                    path(d='M8 5v14l11-7z')
+                                                    path(d='M0 0h24v24H0z', fill='none')
+                                            .u-spaceTD2 Watch two similar stories of illness sufferers with one big difference
+
+.o-container.o-container--xs.u-textCenter
+    .c-block
+        div
+            h4.c-headline--inText LOCAL, TRUSTED ADVICE
+        quote.c-text--light
+            | "This is a quote from one of your clients that sums up your personalable and assured approach, which is why people trust you and your advice."
+| 15
+
+.o-container.o-container--md.c-block.c-block--half
+    .u-textCenter
+        .Grid.Grid--withGutter
+            .Grid-cell.u-sm-size1of3
+                img(src='http://placehold.it/75x75')
+                h3.c-headline--sm Personal, local service.
+                hr
+                p.u-textLeft.c-text--light
+                    | Feature one text goes here and occupies about three or four lines in total. Simple yo.
+            .Grid-cell.u-sm-size1of3.u-smDown-spaceT15
+                img(src='http://placehold.it/75x75')
+                h3.c-headline--sm Driven to help.
+                hr
+                p.u-textLeft.c-text--light
+                    | Feature one text goes here and occupies about three or four lines in total. Simple yo.
+            .Grid-cell.u-sm-size1of3.u-smDown-spaceT15
+                img(src='http://placehold.it/75x75')
+                h3.c-headline--sm I'm on your side.
+                hr
+                p.u-textLeft.c-text--light
+                    | Feature one text goes here and occupies about three or four lines in total. Simple yo.
+
+.c-block.c-block--neutral
+    .o-container.o-container--xs.u-textCenter
+        h2.c-headline Over $4 million.
+        p.u-spaceTD2
+            | That's the value of claims I've enabled in the past decade. Here's a few stories from the people I've helped:
+
+    .o-container.o-container--sm.u-textCenter
+        .c-block.c-block--half
+            .Grid.Grid--withGutter
+                .Grid-cell.u-sm-size1of2
+                    img(src='http://placehold.it/250x250')
+                    h3.c-headline--smBrand Story headline.
+                    hr
+                    p.c-text--sm.u-textLeft
+                        | Feature one text goes here and occupies about three or four lines in total. Simple yo. 
+                        a.o-linkBrand(href='#') Read
+                .Grid-cell.u-sm-size1of2.u-smDown-spaceT15
+                    img(src='http://placehold.it/250x250')
+                    h3.c-headline--smBrand Story headline.
+                    hr
+                    p.c-text--sm.u-textLeft
+                        | Feature one text goes here and occupies about three or four lines in total. Simple yo. 
+                        a.o-linkBrand(href='#') Read
+
+.o-container.o-container--sm.u-textCenter
+    .c-block
+        h2.c-headline What 7 things can you do about it right now?
+        p.u-spaceT
+            | It's not rocket science. We could all do with a safety net for the times we can't control. Yet there's never the time to fully consider all the options. Sign up below and we'll send the 7 things you can do right now to stave off the worst case:
+
+.o-container.o-container--rg.u-textCenter
+    .c-block.c-block--half
+        form#js-contact-form.c-form.u-marginT15(method='POST', action='https://formspree.io/#{email}')
+            #js-contact-flash-messages
+            .c-form-groups
+                .c-form-group.Grid.Grid--withGutterSm
+                    .Grid-cell.u-size1of3
+                        input.c-form-control(placeholder='First Name', name='first-name')
+                    .Grid-cell.u-size1of3
+                        input.c-form-control(type='email', placeholder='Your email address', name='email')
+                    .Grid-cell.u-size1of3
+                        button.c-button.c-button--primary.u-sizeFull(type='submit') Submit
+
+.o-container.o-container--xs.u-textCenter
+    .c-block.c-block--oneAndAHalf
+        div
+            h4.c-headline--inText CONTACT BRETT DIRECTLY
+
+        img.o-image--circle.u-spaceTD2.u-spaceBD2(src='http://placehold.it/75x75')
+        p.c-text--smLight
+            | Get in touch for a free half hour to discuss your situation.
+            br
+            | Email 
+            a.o-linkUnderline(href='mailto:#{email}') #{email}
+            br
+            | Call 
+            a.o-linkUnderline(href='tel:#{phone}') #{phone}
+
+footer.c-footer
+    .o-container
+        nav.c-nav(role='banner')
+            .c-nav-logo #{site_title}
+            ul.c-nav-menu.u-textRight
+                li: a(data-scroll='', href='#why') Why Brett?
+                li: a(data-scroll='', href='#what-people-say') What people say
+                li: a(data-scroll='', href='#contact') Contact
+                li •
+                li Call 1800 772 100
+
+        .u-colorBlack40.c-text--sm
+            div
+                | Brett Aitken. Liscense number 4771-0019-7356-7431. 177 Pointing Drive, Red Lynch, Queensland 4870.
+            div
+                | Copyright (c) #{site_title} 2017. ALl right reserved. Privacy • Disclaimer • Site by Patternworks
+
+.c-nav-trigger.u-sm-hide(data-modal-toggle='') Menu
+.o-modal(tabindex='-1', role='dialog', aria-labelledby='mobileNav', data-modal='')
+    .o-modal-dialog.o-aligner(role='document')
+        .o-aligner-item
+            .Nav-logo
+                a(href='/') #{site_title}
+            ul.Nav-menu
+                li: a(data-scroll='', href='#why') Why Brett?
+                li: a(data-scroll='', href='#what-people-say') What people say
+                li: a(data-scroll='', href='#contact') Contact

@@ -258,7 +258,7 @@ $serif-font-stack      : Georgia, "Times New Roman", "Times", serif;
 $display-font-stack    : $sans-font-stack;
 
 // Are you referencing the font files rather than using a base64 string?
-$fonts-path           : '/fonts/';
+$fonts-path           : '../../assets/fonts/';
 
 // Is your font namespaced?
 $font-sans-namespace        : 'Averta-';
