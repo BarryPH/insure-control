@@ -6,6 +6,8 @@ html(lang='en')
     body(class='#{current.path[0]} #{current.path[1]}')
         != yield
 
+        script(src='assets/js/libs/smooth-scroll.min.js')
+        script(src='assets/js/smooth-scroll.js')
         script(src='assets/js/formspree.js')
         script(src='assets/js/touchnav.js')
         script(src='assets/js/videoOverlay.js')
