@@ -46,7 +46,7 @@ $palette: (
     neutral-text               : darken(#f0eeeb, 27%),
     neutral-dark               : darken(#f0eeeb, 9%),
     neutral-light              : lighten(#f0eeeb, 4%),
-    brand                      : $brand,
+    brand                      : #008c7f,
     brand-complement           : #2e2423,
     brand-counter              : #887E73,
     brand-purplemud            : #3e3746,
@@ -87,6 +87,9 @@ $space                         : $space-unit * 1;
 $gutterSpace                   : space(1);
 $paragraphSpace                : space(0.75);
 $blockSpace                    : 9vh; //5.5vh;
+
+$windowSpace                   : 7.03125%;
+$windowSpaceLg                 : 13.67188%;
 
 $cardRadius                    : 6px;
 $buttonRadius                  : 4px;
@@ -136,59 +139,59 @@ $container-max-widths: (
 
 $fontsizes: (
     text--xs: (
-        xs            : 10px,
-        sm            : 11px,
-        rg            : 12px
+        sm            : 10px,
+        rg            : 11px,
+        lg            : 12px
     ),
     text--sm: (
-        xs            : 12px,
-        sm            : 13px,
-        rg            : 14px
+        sm            : 12px,
+        rg            : 13px,
+        lg            : 14px
     ),
     text--meta: (
-        xs            : 11px,
-        sm            : 13px,
-        rg            : 15px
+        sm            : 11px,
+        rg            : 13px,
+        lg            : 15px
     ),
     text: (
-        xs            : 14px,
-        sm            : 15px,
-        rg            : 16px
+        sm            : 16px,
+        rg            : 17px,
+        lg            : 18px
     ),
     text--lg: (
-        xs            : 18px,
-        sm            : 20px,
-        lg            : 21px
+        sm            : 19px,
+        rg            : 21px,
+        lg            : 24px
     ),
     headline--xs: (
-        xs            : 21px,
-        sm            : 24px,
+        sm            : 21px,
+        rg            : 24px,
         lg            : 27px
     ),
     headline--sm: (
-        xs            : 17px,
-        sm            : 19px,
-        lg            : 20px
+        sm            : 18px,
+        rg            : 20px,
+        lg            : 22px
     ),
     headline--md: (
-        xs            : 20px,
-        sm            : 24px,
-        lg            : 29px
+        sm            : 27px,
+        rg            : 30px,
+        lg            : 33px
     ),
     headline: (
-        xs            : 22px,
-        sm            : 29px,
+        sm            : 22px,
+        rg            : 29px,
         lg            : 36px
     ),
     headline--lg: (
-        xs            : 27px,
-        sm            : 34px,
+        sm            : 27px,
+        rg            : 34px,
         lg            : 42px
     ),
     display: (
-        xs            : 40px,
-        sm            : 54px,
-        lg            : 60px
+        sm            : 39px,
+        rg            : 44px,
+        lg            : 48px
     )
 );
 
@@ -272,16 +275,16 @@ $sans-thin            : '#{$font-sans-namespace}Light';
 $sans-light           : '#{$font-sans-namespace}Light';
 $sans-book            : '#{$font-sans-namespace}Regular';
 $sans-regular         : '#{$font-sans-namespace}Regular';
+$sans-regular-italic  : '#{$font-sans-namespace}Regular-Italic';
 $sans-medium          : '#{$font-sans-namespace}Medium';
+$sans-medium-italic   : '#{$font-sans-namespace}Medium';
 $sans-semibold        : '#{$font-sans-namespace}Semibold';
 $sans-bold            : '#{$font-sans-namespace}Bold';
 $sans-heavy           : '#{$font-sans-namespace}Heavy';
 $sans-black           : '#{$font-sans-namespace}Heavy';
 
-$sans-regular-italic  : '#{font-sans-namespace}Regular-italic';
-$sans-medium-italic   : Medium-italic;
-
 $serif-bold           : '#{$font-serif-namespace}Bold';
+
 
 
 
@@ -290,14 +293,15 @@ $serif-bold           : '#{$font-serif-namespace}Bold';
 // Ps. This below prints an unwanted space between the path var and the font var:
 // @include font-face($sans-thin, join($fonts-path,$sans-thin) );
 
+@include font-face($sans-regular, '#{$fonts-path}#{$sans-regular}' );
+@include font-face($sans-regular-italic, '#{$fonts-path}#{$sans-regular-italic}' );
+@include font-face($sans-semibold, '#{$fonts-path}#{$sans-semibold}' );
+@include font-face($sans-bold, '#{$fonts-path}#{$sans-bold}' );
+
 //@include font-face($sans-thin, '#{$fonts-path}#{$sans-thin}' );
 //@include font-face($sans-light, '#{$fonts-path}#{$sans-light}' );
 //@include font-face($sans-book, '#{$fonts-path}#{$sans-book}' );
-@include font-face($sans-regular, '#{$fonts-path}#{$sans-regular}' );
-@include font-face($sans-regular-italic, '#{$fonts-path}#{$sans-regular-italic}' );
 //@include font-face($sans-medium, '#{$fonts-path}#{$sans-medium}' );
-@include font-face($sans-semibold, '#{$fonts-path}#{$sans-semibold}' );
-@include font-face($sans-bold, '#{$fonts-path}#{$sans-bold}' );
 //@include font-face($sans-heavy, '#{$fonts-path}#{$sans-heavy}' );
 //@include font-face($sans-black, '#{$fonts-path}#{$sans-black}' );
 
@@ -315,9 +319,10 @@ $font-text-thin       : join($sans-thin, $main-font-stack);
 $font-text-light      : join($sans-light, $main-font-stack);
 $font-text-book       : join($sans-book, $main-font-stack);
 $font-text-regular    : join($sans-regular, $main-font-stack);
-$font-text-regular-i  : join($sans-regular, $main-font-stack);
+$font-text-regular-i  : join($sans-regular-italic, $main-font-stack);
 $font-text-medium     : join($sans-medium, $main-font-stack);
 $font-text-medium-i   : join($sans-medium-italic, $main-font-stack);
+$font-text-semibold   : join($sans-semibold, $main-font-stack);
 $font-text-bold       : join($sans-bold, $main-font-stack);
 $font-text-xbold      : $font-text-regular;
 $font-text-heavy      : join($sans-heavy, $main-font-stack);
@@ -336,24 +341,24 @@ $font-headline        : join($serif-bold, $serif-font-stack);
 // Object/component default fonts
 // --------------------------------------------------------------------------
 
-$fonts-path-2           : '/assets/fonts-serif/';
-
-$serif                  : NoticiaText-Regular;
-$serif-i                : NoticiaText-Italic;
-
-@include font-face($serif, '#{$fonts-path-2}#{$serif}' );
-@include font-face($serif-i, '#{$fonts-path-2}#{$serif-i}' );
-
-$font-serif             : join($serif, $serif-font-stack);
-$font-serif-i           : join($serif-i, $serif-font-stack);
-$font-serif-i           : $serif-i;
-
-//$font-serif             : 'Maitree';
-//$font-serif             : 'Yrsa';
-//$font-serif             : 'Lora';
-//$font-serif             : 'Merriweather';
-//$font-serif             : 'Noticia Text';
-//$font-serif             : $serif;
+//$fonts-path-2           : '/assets/fonts-serif/';
+//
+//$serif                  : NoticiaText-Regular;
+//$serif-i                : NoticiaText-Italic;
+//
+//@include font-face($serif, '#{$fonts-path-2}#{$serif}' );
+//@include font-face($serif-i, '#{$fonts-path-2}#{$serif-i}' );
+//
+//$font-serif             : join($serif, $serif-font-stack);
+//$font-serif-i           : join($serif-i, $serif-font-stack);
+//$font-serif-i           : $serif-i;
+//
+////$font-serif             : 'Maitree';
+////$font-serif             : 'Yrsa';
+////$font-serif             : 'Lora';
+////$font-serif             : 'Merriweather';
+////$font-serif             : 'Noticia Text';
+////$font-serif             : $serif;
 
 
 

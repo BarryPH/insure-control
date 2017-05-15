@@ -7,17 +7,11 @@
 
 .c-nav {
     @include containerWindow();
+    align-content: center;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     position: relative;
-
-    padding: 37px space(1.5);
-
-    //@include media-breakpoint-up(sm) { max-width: container-width(xl); }
-    //@include media-breakpoint-up(lg) { max-width: none; }
-    //@include media-breakpoint-up(lg) { padding: 0 4%; }
-    //@include media-breakpoint-up(xl) { padding: 0 12%; }
-    //@include media-breakpoint-up(su) { padding: 0 18%; }
 }
 
 .c-nav p,
@@ -25,18 +19,14 @@
     margin-bottom: 0;
 }
 
-.c-nav a {
-    padding: space(1) 0;
-    
-    @include on-event() {
-        //color: palette(brand-aubergine-active);
-        text-decoration: none;
-    }
-}
-
 .c-nav-logo {
-    font-family: $font-headline;
-    color: palette(brand);
+    //font-family: $font-headline;
+    //color: palette(brand);
+    padding: 0;
+    
+    img {
+        width: 80px;
+    }
 }
 
 .c-nav-menu {
@@ -51,8 +41,17 @@
 }
 
 .c-nav-menu li {
-    @include textRgBold();
-    line-height: 36px;
+    @include textRgMedium();
+    //line-height: 36px;
+    
+    a {
+        padding: space(1) 0;
+        
+        @include on-event() {
+            //color: palette(brand-aubergine-active);
+            text-decoration: none;
+        }
+    }
 }
 
 .c-nav-menu li:not(:last-child) {

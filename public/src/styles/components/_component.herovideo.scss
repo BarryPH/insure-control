@@ -27,7 +27,7 @@
 
     &:before {
         @include baseTransition();
-        background-color: rgba(0, 36, 163, 0.75);
+        background-color: rgba( palette(brand), 0.7);
         content: " ";
         height: 100%;
         left: 0;

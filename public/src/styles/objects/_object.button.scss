@@ -18,7 +18,8 @@
 // The SUITCSS Button, themeable.
 
 $Button: (
-    Button-border-color: palette(highlight-action),
+    Button-background-color: palette(brand),
+    Button-border-color: palette(brand),
     Button-border-radius: $buttonRadius,
     Button-border-width: 1px,
     Button-color: palette(background),
@@ -32,7 +33,6 @@ $Button: (
     @include baseTransition();
     @include typeReset();
     @include textRg();
-    background: transparent;
     border-color: map-fetch($Button, Button-border-color);
     border-radius: map-fetch($Button, Button-border-radius);
     border-style: solid;
@@ -51,7 +51,7 @@ $Button: (
     user-select: none;
 
     @include on-event(true) {
-        background-color: palette(highlight-action);
+        background-color: map-fetch($Button, Button-background-color);
         border-color: map-fetch($Button, Button-border-color);
         color: map-fetch($Button, Button-color);
         font-family: map-fetch($Button, Button-font);

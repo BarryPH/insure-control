@@ -58,38 +58,38 @@
 // TODO 160630: if no other breakpoints, null.
 
 @mixin textSize(
-	$mixinSize: Text
+    $mixinSize: Text
 ) {
-	font-size: fontsize($mixinSize, xs);
-	@include media-breakpoint-up(sm) { font-size: fontsize($mixinSize, sm); }
+    font-size: fontsize($mixinSize, xs);
+    @include media-breakpoint-up(sm) { font-size: fontsize($mixinSize, sm); }
 }
 
 
 // Text block mixins…
 
 @mixin reverseTextBlock {
-	h1,
-	p,
-	ul {
-		color: palette(black-10) !important;
-	}
+    h1,
+    p,
+    ul {
+        color: palette(black-10) !important;
+    }
 }
 
 //.c-text-block--reverse { @include reverseTextBlock(); }
 
 @mixin centerTextBlock {
-	h1,
-	p,
-	ul {
-		text-align: center !important;
-	}
+    h1,
+    p,
+    ul {
+        text-align: center !important;
+    }
 }
 
 //.c-text-block--center { @include centerTextBlock(); }
 
 @mixin headerTextBlock {
-	h1 { margin-bottom: space(0.2); }
-	p  { margin-bottom: space(0.35); }
+    h1 { margin-bottom: space(0.2); }
+    p  { margin-bottom: space(0.35); }
 }
 
 //.c-text-block--header { @include headerTextBlock(); }

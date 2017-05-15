@@ -5,33 +5,37 @@
 // --------------------------------------------------------------------------
 
 
-@mixin container(
+//@function container-width($width: 'lg') {
+//	@return map-get($container-max-widths, $width);
+//}
+
+@mixin containerWidth(
     $padded: true,
     $width: container-width(lg)
 ) {
 
     @if $padded {
         height: inherit;
+        //max-width: $width + ($gutterSpace * 2);
+        max-width: calc( #{$width} + (#{$gutterSpace} * 2) );
         padding-left: $gutterSpace;
         padding-right: $gutterSpace;
         
-        @include media-breakpoint-up(lg) {
-            padding-left: $gutterSpace * 2;
-            padding-right: $gutterSpace * 2;
-        }
+        //@include media-breakpoint-up(lg) {
+        //    max-width: $width + ($gutterSpace * 4);
+        //    padding-left: $gutterSpace * 2;
+        //    padding-right: $gutterSpace * 2;
+        //}
         
     } @else {
-        max-width: $width + ($gutterSpace * 2);
-        
-        @include media-breakpoint-up(lg) {
-            max-width: $width + ($gutterSpace * 4);
-        }
+        max-width: $width;
     }
-    
+}
+
+@mixin containerFrame() {
     @include clearfix();
     margin-left: auto;
     margin-right: auto;
-    max-width: $width;
     position: relative;
 
     p,
@@ -46,70 +50,52 @@
 
 
 .o-container {
-    @include container();
+    @include containerFrame();
+    @include containerWidth();
 
-    // sizes
+    // widths
     &--xs {
-        @include container( $width: container-width(xs) );
+        @include containerWidth( $width: container-width(xs) );
     }
 
     &--sm {
-        @include container( $width: container-width(sm) );
+        @include containerWidth( $width: container-width(sm) );
     }
 
     &--rg {
-        @include container( $width: container-width(rg) );
+        @include containerWidth( $width: container-width(rg) );
     }
 
     &--md {
-        @include container( $width: container-width(md) );
+        @include containerWidth( $width: container-width(md) );
     }
 
     &--xl {
-        @include container( $width: container-width(xl) );
+        @include containerWidth( $width: container-width(xl) );
     }
     
-    // insets
-    
+    // insets like instrument.com
     &--tuck {
-        
+        padding-left: $windowSpace;
+        padding-right: $windowSpace;
+
+        @include media-breakpoint-up(xl) {
+            padding-left: $windowSpaceLg;
+            padding-right: $windowSpaceLg;
+        }
     }
-
-    //&--super {
-    //    //@include container( container-width(su) );
-    //	max-width: 100%;
-    //	padding: 0 space(1.5);
-    //
-    //    @include media-breakpoint-up(sm) {
-    //        padding: 0 space(4);
-    //    }
-    //}
-
-    //&--postInfo {
-    //	@include container( $width: container-width(lg) );
-    //	//padding: 0;
-    //
-    //	@include media-breakpoint-up(xs) {
-    //		padding: 0 !important;
-    //	}
-    //
-    //	@include media-breakpoint-up(xl) {
-    //		// @include container( container-width(xl) );
-    //		padding: 0 space(1.5);
-    //	}
-    //
-    //	@include media-breakpoint-up(su) {
-    //		@include container( $width: container-width(xl) );
-    //	}
-    //}
 }
 
 
 
+// Window modifier
+// 1. Mainly used to wrap a hero image so it bleeds at mobile.
+// --------------------------------------------------------------------------
 
 @mixin containerWindow() {
-    padding: 21px space(1.5) 20px;
-    //@include media-breakpoint-up(sm) { padding: space(1) space(1.5) space(0.75); }
+    //padding: 21px $gutterSpace * 0.5 20px;
+    padding: 21px $gutterSpace 20px;
+    //@include media-breakpoint-up(sm) { padding: 21px $gutterSpace * 0.75 20px; }
 }
 
 .c-container--window {
@@ -118,18 +104,45 @@
 
 
 
+// Bleed modifier
+// Mainly used to wrap a hero image so it bleeds at mobile.
+// --------------------------------------------------------------------------
 
+@mixin containerMobileBleed(
+    $breakpoint: md
+) {
+    margin-left: -#{$gutterSpace};
+    margin-right: -#{$gutterSpace};
 
-.c-container-rule {
-    @include container(false);
-    border: 0;
-    border-top: 1px solid palette(black-10);
-    margin-top: 0;
-    margin-bottom: space(0.75);
+    > * {
+        max-width: initial;
+        width: 100%;
+    }    
+
+    //@include media-breakpoint-between(lg, lg-plus) {
+    //    margin-left: -#{$gutterSpace * 2};
+    //    margin-right: -#{$gutterSpace * 2};
+    //}
+
+    @include media-breakpoint-up($breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.o-column--post {
-    max-width: container-width(xs);
-    // @include when-inside(".o-container")     { margin-left: 0; }
-    // @include when-inside(".o-container--xl") { margin-left: calc( (1200-960) / 2 ); }
+.o-container--xs.o-container--mobileBleed { @include containerMobileBleed(sm); }
+.o-container--sm.o-container--mobileBleed { @include containerMobileBleed(md); }
+.o-container--md.o-container--mobileBleed { @include containerMobileBleed(lg); }
+
+
+// inset
+@mixin containerMobileBleedInset(
+    $breakpoint: md
+) {
+    padding: 0 $gutterSpace;
+    @include media-breakpoint-up($breakpoint) { padding: 0; }
 }
+
+.o-container--xs .o-container--mobileBleed-inset { @include containerMobileBleedInset(sm); }
+.o-container--sm .o-container--mobileBleed-inset { @include containerMobileBleedInset(md); }
+.o-container--md .o-container--mobileBleed-inset { @include containerMobileBleedInset(lg); }
