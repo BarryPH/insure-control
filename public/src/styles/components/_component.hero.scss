@@ -9,6 +9,7 @@
     background-color: palette(brand-purplemud);
     margin-bottom: 1px;
     position: relative;
+    text-align: center;
     
     // hooks
     &--reversedIn {
@@ -62,6 +63,10 @@
 
     &--fullScreen {
         height: calc(100vh - 80px);
+    }
+
+    @include media-breakpoint-up(sm) {
+        text-align: left;
     }
 }
 
@@ -287,8 +292,13 @@
 }
 
 .c-hero-image {
+    display: none;
     left: 50%;
     bottom: 0;
+
+    @include media-breakpoint-up(sm) {
+        display: block;
+    }
 }
 
 

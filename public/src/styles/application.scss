@@ -95,7 +95,7 @@
 @import "components/component.share";
 //@import "components/component.stickyfooter";
 //@import "components/component.block";
-//@import "components/component.nav";
+@import "components/component.nav";
 //@import "components/component.owl";
 //@import "components/component.flickity";
 //@import "components/component.modal";
@@ -115,6 +115,7 @@
 @import "components/component.card";
 @import "components/component.post";
 @import "components/component.herovideo";
+@import "components/component.touchnav";
 
 // UTILITIES
 //@import "utils/utility.spacers.v2";

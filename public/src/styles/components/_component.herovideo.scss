@@ -22,16 +22,12 @@
     //text-indent: -999em;
     transition: opacity 800ms, height 0s;
     transition-delay: 0s, 0s;
+    color: #fff;
+    font-family: $font-text-bold;
 
     &:before {
         @include baseTransition();
-        background-color: rgba( palette(black), 0.25 );
-        background-color: rgba(69, 39, 0, 0.4);
-        background-color: rgba(149, 96, 28, 0.5);
-        background-color: rgba(215, 131, 24, 0.5);
-        background-color: rgba( palette(highlight-action), 0.2);
-        background-color: rgba(215, 24, 163, 0.2);
-        background-color: rgba(137, 0, 99, 0.3);
+        background-color: rgba(0, 36, 163, 0.75);
         content: " ";
         height: 100%;
         left: 0;

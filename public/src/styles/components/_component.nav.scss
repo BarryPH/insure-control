@@ -1,0 +1,97 @@
+$headerInset: space(1.5);
+$headerInsetMobile: space(0.75);
+
+.Nav {
+    border-bottom: 1px solid palette(black-10);
+    position: relative;
+
+    @include when-inside(".Footer") {
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.Nav-logo {
+    @include o-aligner();
+
+    a {
+        background-image: none;
+
+        @include on-event(true) {
+            color: palette(brand);
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-right: $headerInset;
+    }
+
+    @include media-breakpoint-down(sm) {
+        justify-content: flex-start;
+        padding: $headerInsetMobile 0;
+    }
+}
+
+.Nav-menu {
+    @include o-aligner();
+    @include listInline();
+
+    li {
+        @include headline();
+        font-family: $font-text-regular;
+        &:not(:last-child) {
+            margin-right: $headerInset;
+        }
+    }
+
+    li a {
+        @include underlineLink(none);
+        display: inline-block;
+        padding: $headerInset 0;
+
+        @include on-event(true) {
+            color: palette(black-40);
+        }
+    }
+
+    .is-active a {
+        color: palette(text);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include when-inside("nav[role="banner"]") {
+            display: none;
+        }
+    }
+}
+
+
+// Mobile nav
+// --------------------------------------------------------------------------
+
+.o-modal .Nav-logo {
+    @include display();
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 $headerInset;
+}
+
+.o-modal .Nav-menu {
+    flex-direction: column;
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        //@include displaySuper();
+        margin: 0;
+        padding: 0 0 $headerInset 0;
+    }
+}
+
+.o-modal .Contact-detail {
+    color: palette(white);
+    margin-top: 10px;
+    text-align: center;
+}
