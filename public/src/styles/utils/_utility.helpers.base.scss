@@ -1,6 +1,8 @@
+// height
+.u-height100 { height: 100%; }
 
-.u-marginNTD3 { margin-top: -#{space(1/3)}  !important; }
 
+// flex order
 .u-smDown-flexOrderFirst {
     @include media-breakpoint-down(xs) {
         order: -1 !important;
@@ -81,10 +83,14 @@
 // --------------------------------------------------------------------------
 
 
+.u-paddingR   { padding-right: space(1); }
+.u-paddingRD2 { padding-right: space(0.5); }
+
 .u-blockSpaceT { margin-top: $blockSpace; }
 
 .u-marginT0      { margin-top     : 0 !important; }
 
+.u-marginNTD3 { margin-top: -#{space(1/3)}  !important; }
 
 .u-space0     { margin: 0 !important; }
 
