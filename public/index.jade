@@ -1,11 +1,13 @@
 nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
     a.c-nav-logo(href="/")
         img(src="assets/images/logo.jpg", alt="#{site_title}")
-    ul.c-nav-menu
+    ul.c-nav-menu.c-nav-menu--desktop
         li: a(data-scroll, href='#why') Why Brett?
         li: a(data-scroll, href='#what-people-say') What people say
         li: a(data-scroll, href='#contact') Contact
         li •
+        li Call 1800 772 100
+    ul.c-nav-menu.c-nav-menu--mobile
         li Call 1800 772 100
 
 .c-hero
@@ -15,15 +17,15 @@ nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
             .o-posAbsoluteCenter.o-coverImage(style='background-image: url("assets/images/cairns.jpg"); opacity: 0.15;')
             .o-container.o-container--md
                 .Grid.u-height100
-                    .Grid-cell.u-sm-size5of12
+                    .Grid-cell.u-sm-size5of12.u-smDown-spaceT
                         .o-aligner
-                            .o-aligner-item.u-paddingRD2
+                            .o-aligner-item.u-sm-paddingRD2
                                 h1.c-hero-display Policies for people.
                                 p.c-hero-text.u-marginT2
                                     | I provide a local, face-to-face service to help people insure for themselves and their families.
                                 p.c-hero-text
                                     | I'm driven to help, because when I lost my wife to cancer, we weren't financially prepared.
-                    .Grid-cell.u-sm-size7of12.u-flex.u-flexAlignItemsEnd
+                    .Grid-cell.u-sm-size7of12.u-flex.u-flexAlignItemsEnd.u-smDown-spaceT
                         img(src="assets/images/brett-aitken.png", alt="Brett Aitken, owner of Insure Control")
 
 .o-container.o-container--sm.u-textCenter#why
@@ -32,7 +34,7 @@ nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
             h4.c-headline--inText Life, assured
         h2.c-headline--md There are some things we can't control. #[span.u-lg-lineBreak It pays to think ahead.]
 
-    .c-block
+    .c-block.u-smDown-paddingT.u-smDown-paddingB
         .FlexEmbed
             .FlexEmbed-ratio--16by9
                 .FlexEmbed-content
@@ -47,7 +49,7 @@ nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
                                                 svg.o-icon.u-colorWhite(width='60', height='60', version='1.1', viewbox='0 0 24 24')
                                                     path(d='M8 5v14l11-7z')
                                                     path(d='M0 0h24v24H0z', fill='none')
-                                            .u-colorWhite.u-spaceT Watch two similar stories of illness sufferers with one big difference
+                                            .u-colorWhite.u-smDown-spaceTD2.u-sm-spaceT Watch two similar stories of illness sufferers with one big difference
 
 .o-container.o-container--xs.u-textCenter
     .c-block
@@ -59,7 +61,7 @@ nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
 .o-container.o-container--md.c-block.c-block--half
     .u-textCenter
         .Grid.Grid--withGutter
-            .Grid-cell.u-sm-size1of3
+            .Grid-cell.u-sm-size1of3.u-smDown-spaceT15
                 img(src='http://placehold.it/75x75')
                 h3.c-headline--sm Personal, local service.
                 hr
@@ -114,11 +116,11 @@ nav.c-nav.c-nav--medium.c-nav--floating(role='banner')
             #js-contact-flash-messages
             .c-form-groups
                 .c-form-group.Grid.Grid--withGutterSm
-                    .Grid-cell.u-sm-size1of3
+                    .Grid-cell.u-sm-size1of3.u-smDown-spaceTD2
                         input.c-form-control(placeholder='First Name', name='first-name')
-                    .Grid-cell.u-sm-size1of3
+                    .Grid-cell.u-sm-size1of3.u-smDown-spaceTD2
                         input.c-form-control(type='email', placeholder='Your email address', name='email')
-                    .Grid-cell.u-sm-size1of3
+                    .Grid-cell.u-sm-size1of3.u-smDown-spaceTD2
                         button.c-button.c-button--primary.u-sizeFull(type='submit') Submit
 
 .o-container.o-container--xs.u-textCenter
@@ -140,14 +142,16 @@ footer.c-footer
     .o-container
         nav.c-nav(role='banner')
             .c-nav-logo #{site_title}
-            ul.c-nav-menu.u-textRight
+            ul.c-nav-menu.c-nav-menu--desktop
                 li: a(data-scroll, href='#why') Why Brett?
                 li: a(data-scroll, href='#what-people-say') What people say
                 li: a(data-scroll, href='#contact') Contact
                 li •
                 li Call 1800 772 100
+            ul.c-nav-menu.c-nav-menu--mobile
+                li Call 1800 772 100
 
-        .u-colorBlack40.c-text--sm
+        .c-footer-meta
             div
                 | Brett Aitken. Liscense number 4771-0019-7356-7431. 177 Pointing Drive, Red Lynch, Queensland 4870.
             div
