@@ -129,6 +129,12 @@
     @include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
 }
 
+.c-hero .FlexEmbed {
+    @include media-breakpoint-down(sm) {
+        height: 75vh;
+    }
+}
+
 
 
 

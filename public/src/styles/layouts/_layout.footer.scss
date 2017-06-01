@@ -41,6 +41,10 @@ $footerRowSpacer: $blockSpace * 0.25;
     }
 }
 
+.c-footer-meta div:not(:last-child) {
+    margin-bottom: space(0.2);
+}
+
 
 
 

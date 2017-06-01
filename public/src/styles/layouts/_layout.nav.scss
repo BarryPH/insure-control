@@ -32,11 +32,24 @@
 
 .c-nav-menu {
     @include listInline();
+}
+
+.c-nav-menu--desktop {
     display: none;
 
     @include media-breakpoint-up(sm) {
         @include when-inside("nav[role="banner"]") {
             display: block;
+        }
+    }
+}
+
+.c-nav-menu--mobile {
+    display: block;
+
+    @include media-breakpoint-up(sm) {
+        @include when-inside("nav[role="banner"]") {
+            display: none;
         }
     }
 }
