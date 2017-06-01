@@ -47,7 +47,7 @@
     @include headlineTemplate(
         $mixinColor: palette(brand),
         $mixinFont: $font-display,
-        $mixinLetterSpacing: -0.035em,
+        $mixinLetterSpacing: -0.03em,
         $mixinSize: display
     );
 }
@@ -113,15 +113,17 @@
         $mixinFont: $font-headline,
         $mixinSize: headline--sm,
         $mixinColor: palette(brand),
-        $mixinMarginBottom: space(0.75),
-        $mixinMarginTop: space(0.75)
+        $mixinMarginBottom: space(0.5),
+        $mixinMarginTop: space(1)
     );
+    text-align: left;
 }
 
 @mixin headlineMd() {
     @include headlineTemplate(
         $mixinFont: $font-text-regular,
         $mixinSize: headline--md,
+        $mixinLetterSpacing: -0.01em,
         $mixinLineHeight: 1.45
     );
 }
@@ -195,6 +197,7 @@
     @include textXsBold();
     @include headlineRule();
     color: palette(brand);
+    letter-spacing: 0.075em;
     text-transform: uppercase;
 }
 

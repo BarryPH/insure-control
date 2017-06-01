@@ -24,7 +24,7 @@ $brand                         : #002DD0;
 
 $palette: (
     black                      : $base-black,
-    text                       : #333,
+    text                       : #4a5756,
     text-dark                  : #151515,
     text-light                 : tint($base-black, 50%),
     text-faint                 : tint($base-black, 70%),
@@ -42,7 +42,7 @@ $palette: (
     white                      : $base-white,
     background                 : #fdfdfd,
     background-neutral         : #F1F4F4, // #F7F4F4,
-    neutral                    : #F2F2F2,
+    neutral                    : #eef3f6,
     neutral-text               : darken(#f0eeeb, 27%),
     neutral-dark               : darken(#f0eeeb, 9%),
     neutral-light              : lighten(#f0eeeb, 4%),
@@ -60,7 +60,7 @@ $palette: (
     highlight-edit             : #4ECF00,
     highlight-edit-dark        : #439213,
     highlight-brand            : rgb(189, 16, 224),
-    border                     : tint($base-black, 92%),
+    border                     : tint($base-black, 86%),
     border-dark                : tint($base-black, 80%),
     warning                    : #FFD40C,
     bad-news                   : #C60C0C,
@@ -85,7 +85,7 @@ $space-unit                    : $base-line-height;
 $space                         : $space-unit * 1;
 
 $gutterSpace                   : space(1);
-$paragraphSpace                : space(0.75);
+$paragraphSpace                : space(0.5);
 $blockSpace                    : 9vh; //5.5vh;
 
 $windowSpace                   : 7.03125%;
@@ -144,9 +144,9 @@ $fontsizes: (
         lg            : 12px
     ),
     text--sm: (
-        sm            : 12px,
-        rg            : 13px,
-        lg            : 14px
+        sm            : 13px,
+        rg            : 14px,
+        lg            : 15px
     ),
     text--meta: (
         sm            : 11px,
@@ -155,13 +155,13 @@ $fontsizes: (
     ),
     text: (
         sm            : 16px,
-        rg            : 17px,
-        lg            : 18px
+        rg            : 18px,
+        lg            : 20px
     ),
     text--lg: (
-        sm            : 18px,
-        rg            : 20px,
-        lg            : 23px
+        sm            : 19px,
+        rg            : 22px,
+        lg            : 25px
     ),
     headline--xs: (
         sm            : 21px,
@@ -176,7 +176,7 @@ $fontsizes: (
     headline--md: (
         sm            : 27px,
         rg            : 30px,
-        lg            : 33px
+        lg            : 34px
     ),
     headline: (
         sm            : 22px,
@@ -190,8 +190,8 @@ $fontsizes: (
     ),
     display: (
         sm            : 39px,
-        rg            : 44px,
-        lg            : 48px
+        rg            : 45px,
+        lg            : 51px
     )
 );
 
@@ -207,7 +207,7 @@ $border-radius: (
 
 $button-height: (
     concise           : 36px,
-    base              : 44px,
+    base              : 52px,
     baseWithBorder    : 46px,
     lg                : 55px
 );

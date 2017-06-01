@@ -6,7 +6,7 @@
 
 
 .c-hero {
-    //background-color: palette(brand-purplemud);
+    background-color: rgba( palette(black), 0.02 );
     margin-bottom: 1px;
     position: relative;
     text-align: center;
@@ -105,7 +105,7 @@
 
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
-    padding-bottom: calc(60vh);
+    padding-bottom: calc(58vh);
     //@include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
 }
 
@@ -210,11 +210,11 @@
 
 .c-hero-display {
     @include display();
-    margin-bottom: space(1);
+    margin-bottom: space(1.5);
     color: palette(brand);
     
     span {
-        font-family: $font-text-light;
+        //font-family: $font-text-light;
     }
 }
 
@@ -235,6 +235,7 @@
 
 .c-hero-text {
     @include textLgMedium();
+    letter-spacing: -0.003em;
     line-height: 1.25;
 }
 

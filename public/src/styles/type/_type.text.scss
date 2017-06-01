@@ -25,7 +25,7 @@
     $mixinSize: text,
     $mixinColor: palette(text),
     $mixinFont: $font-text-regular,
-    $mixinLetterSpacing: 0.0125em,
+    $mixinLetterSpacing: -0.001em,
     $mixinLineHeight: $base-line-height-unit
 ) {
 
@@ -228,9 +228,9 @@
 // Component: Text blocks
 // --------------------------------------------------------------------------
 
-.c-text-block   { > * { @include textRg(); } }
-.c-textSm-block { > * { @include textSm(); } }
-.c-textSmLight-block { > * { @include textSmLight(); } }
+.c-textBlock   { > * { @include textRg(); } }
+.c-textSmBlock { > * { @include textSm(); } }
+.c-textSmLightBlock { > * { @include textSmLight(); } }
 
 .c-text-block--footer {
     @include listClean();

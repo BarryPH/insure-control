@@ -22,11 +22,24 @@ $footerRowSpacer: $blockSpace * 0.25;
     padding-right: 0;
 }
 
+.c-footer .c-nav-logo {
+    img {
+        width: 50px;
+    }
+}
+
 .c-footer .c-nav-menu li {
     @include textRg();
     //line-height: 36px;
 }
 
+.c-footer-meta {
+    p {
+        @include textSmLight();
+        margin-bottom: space(0.5);
+        text-align: center;
+    }
+}
 
 
 

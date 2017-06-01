@@ -6,11 +6,12 @@
 
 
 .c-nav {
-    @include containerWindow();
+    //@include containerWindow();
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: space(0.75) 0;
     position: relative;
 }
 
