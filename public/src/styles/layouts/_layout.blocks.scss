@@ -38,6 +38,11 @@ $innerBlockSpace: space(3);
         padding: $blockSpace 0;
     }
 
+    &--brand {
+        background-color: palette("brand");
+        padding: $blockSpace 0;
+    }
+
     &--neutralShowcase {
         background-color: palette("black-5");
         background: linear-gradient( palette("black-5") 70%, rgba( palette(brand-purplemud), 0.2) 100% );
