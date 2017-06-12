@@ -105,7 +105,7 @@
 
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
-    padding-bottom: calc(58vh);
+    padding-bottom: calc(50vh);
     //@include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
 }
 
@@ -310,29 +310,12 @@
 }
 
 
-
-//.c-hero-hgroup hr {
-//    margin: space(0.75) auto;
-//    opacity: 0.5;
-//    
-//    @include media-breakpoint-up(lg) {
-//        max-width: 25%;
-//    }
-//}
-
-//.c-hero-hgroup img {
-//    border-radius: 50%;
-//    height: 140px;
-//    margin-bottom: space(0.75);
-//    width: 140px;
-//}
-
-//.c-hero-hgroup--item {
-//    @include textRg();
-//    color: white;
-//    //text-transform: capitalize;
-//}
-//
-//.c-hero-hgroup--item + .c-hero-hgroup--item {
-//    margin-top: space(1/6);
-//}
+.c-hero-signature {
+    margin-bottom: space(0.5);
+    opacity: 0.7;
+    width: 70%;
+    
+    @include media-breakpoint-up(sm) {
+        width: 25%;
+    }
+}
