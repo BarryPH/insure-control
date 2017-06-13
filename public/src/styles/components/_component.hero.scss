@@ -105,8 +105,8 @@
 
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
-    padding-bottom: calc(50vh);
-    //@include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
+    padding-bottom: 150vh;
+    @include media-breakpoint-up(sm) { padding-bottom: 50vh; }
 }
 
 .c-hero-ratioHalf {
@@ -129,11 +129,11 @@
     @include media-breakpoint-up(sm) { padding-bottom: 500px * 1.5; }
 }
 
-.c-hero .FlexEmbed {
-    @include media-breakpoint-down(sm) {
-        height: 75vh;
-    }
-}
+//.c-hero .FlexEmbed {
+//    @include media-breakpoint-down(sm) {
+//        height: 75vh;
+//    }
+//}
 
 
 
