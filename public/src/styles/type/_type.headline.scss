@@ -63,7 +63,7 @@
 
 @mixin headline() {
     @include headlineTemplate(
-        $mixinFont: $font-headline,
+        $mixinFont: $font-text-regular,
         $mixinSize: headline,
         $mixinColor: palette(brand)
     );

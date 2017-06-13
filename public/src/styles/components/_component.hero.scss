@@ -222,6 +222,10 @@
     span {
         //font-family: $font-text-light;
     }
+
+    @include media-breakpoint-down(xs) {
+        margin-bottom: space(1);
+    }
 }
 
 .c-hero-headline {

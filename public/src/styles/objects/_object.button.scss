@@ -156,6 +156,7 @@ $Button: (
         background-color: transparent;
         border-color: currentColor;
     }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +164,11 @@ $Button: (
     height: 80px;
     width: 80px;
     border-radius: 100%;
+
+    @include media-breakpoint-down(xs) {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .c-button--joinHeroVideo {

@@ -13,6 +13,8 @@ $headerInsetMobile: space(0.75);
 
 .Nav-logo {
     @include o-aligner();
+    width: 85px;
+    margin: auto;
 
     a {
         background-image: none;
