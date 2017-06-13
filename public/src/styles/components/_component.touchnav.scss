@@ -1,20 +1,14 @@
 .c-nav-trigger {
-    @include textRg();
-    background-color: palette(white);
-    border-radius: 50%;
-    bottom: $blockSpace * 1.45;
-    box-shadow: 0 0 space(1) rgba( palette(text), 0.4 );
+    @include headlineSm();
     color: palette(black);
     font-family: $font-text-medium;
     line-height: 75px;
-    position: fixed;
-    right: space(1);
     text-align: center;
     width: 75px;
-    z-index: 99;
+    margin: 0;
 
     &:before {
         content: '\2630';
-        margin-right: 3px;
+        margin-right: 7px;
     }
 }

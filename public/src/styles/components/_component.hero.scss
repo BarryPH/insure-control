@@ -106,7 +106,8 @@
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
     padding-bottom: 150vh;
-    @include media-breakpoint-up(sm) { padding-bottom: 50vh; }
+    @include media-breakpoint-up(sm) { padding-bottom: 70vh; }
+    @include media-breakpoint-up(su) { padding-bottom: 50vh; }
 }
 
 .c-hero-ratioHalf {
@@ -244,7 +245,7 @@
 }
 
 .c-hero-text {
-    @include textLgMedium();
+    @include textRgMedium();
     letter-spacing: -0.003em;
     line-height: 1.25;
 }
@@ -317,7 +318,7 @@
 .c-hero-signature {
     margin-bottom: space(0.5);
     opacity: 0.7;
-    width: 70%;
+    width: 35%;
     
     @include media-breakpoint-up(sm) {
         width: 25%;
