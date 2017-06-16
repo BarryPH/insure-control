@@ -80,7 +80,7 @@
 }
 
 @mixin headlineRule() {
-    border-top: 1px solid palette(brand);
+    border-top: 1px solid currentColor;
     padding-top: space(0.7);
     margin-bottom: space(0.7);
     display: inline-block;

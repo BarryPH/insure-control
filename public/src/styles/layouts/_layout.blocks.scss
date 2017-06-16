@@ -32,6 +32,10 @@ $innerBlockSpace: space(3);
         margin-top: $blockSpace * 0.25;
     }
     
+    &--threeQuarters {
+        margin-top: $blockSpace * 0.75;
+    }
+    
     // colors
     &--neutral {
         background-color: palette("neutral");
@@ -67,6 +71,11 @@ $innerBlockSpace: space(3);
         //    background-blend-mode: multiply;
         //    content: "";
         //}
+    }
+    
+    // reverse text out of the block color
+    &--reverse {
+        @include reverseTextBlock();
     }
     
     // specials

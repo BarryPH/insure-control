@@ -106,7 +106,8 @@
 .c-hero-ratioIndex {
     //padding-bottom: calc(100vh - 500px);
     padding-bottom: 150vh;
-    @include media-breakpoint-up(sm) { padding-bottom: 70vh; }
+    @include media-breakpoint-up(sm) { padding-bottom: 640px; }
+    //@include media-breakpoint-up(xl) { padding-bottom: 640px; }
     @include media-breakpoint-up(su) { padding-bottom: 50vh; }
 }
 

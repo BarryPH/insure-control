@@ -62,9 +62,12 @@
 // Text block mixins…
 @mixin reverseTextBlock {
     h1,
+    h2,
+    h3,
+    h4,
     p,
     ul {
-        color: palette(black-10) !important;
+        color: palette(white) !important;
     }
 }
 
