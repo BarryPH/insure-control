@@ -1,5 +1,6 @@
 // height
 .u-height100 { height: 100%; }
+.u-sm-height100 { @include media-breakpoint-up(sm) { height: 100%; } }
 
 
 // flex order
