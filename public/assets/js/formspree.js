@@ -15,7 +15,7 @@ function setFlashMessage(success) {
     messageElem.classList.add(`c-alert-${messageType}`);
 
     if (success) {
-        messageElem.innerHTML = `Thank you for signing up! Download our pdf of the 7 things to can do right now by clicking <a class='o-linkUnderline' href='assets/docs/insure-control-7-things-you-can-do-right-now.pdf'>here</a>.`;
+        messageElem.innerHTML = `Thank you for signing up! Download our pdf of the 7 things to can do right now by clicking <a class='o-linkUnderline' href='https://media-tlzgtjhpbe.now.sh/insure-control-7-things-you-can-do-right-now.pdf'>here</a>.`;
     } else {
         messageElem.innerHTML = 'Woops, something went wrong. Please try again.';
     }
