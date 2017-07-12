@@ -1,3 +1,4 @@
-Made with Harpjs. Deployed via Now. To update, alias the new deployment:
+Made with Harpjs. Deployed via Surge because IT won't allow me access to the root domain so I can't use Now. 
 
-> now alias set <deploymentId> insurecontrol.now.sh
+FYI:
+https://surge.sh/help/adding-a-custom-domain
