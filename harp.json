@@ -2,6 +2,7 @@
   "globals": {
     "site_title": "Insure Control, Cairns",
     "email": "brett@insurecontrol.com.au",
-    "phone": "0418 982 290"
+    "phone": "0418 982 290",
+    "analytics_account": "UA-102585013-1"
   }
 }
